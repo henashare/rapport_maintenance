@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset = "utf-8">
+  <title>SG - Prise de mesures</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="mesures.css">
+  <link rel="icon" type="image/png" href="iconERQZ.png">
+  <script src="jquery.min.js"></script>
+</head>
+  <body class="bg">
+    <div id="bande_horizontale"><h1>Prise de mesures</h1></div>
+    <p><a href="https://www.euroquartz.be/?lang=fr" target="_blank"><img src="logo_euroquartz.png" alt="Euroquartz S.A." class="logo"></a></p>
+    <div id="retour_index"><form action="index.html"><button type="submit" name="mainmenu" accesskey="M" class="mainmenu">Menu principal</button></form></div>
+    <form method="POST" action="lance_mesures.php">
+    <div id="g_btns">
+      <input type="button" value="Sélectionner tout" accesskey="/" id="sel_all" class="global_button"></input>
+      <input type="button" value="Enlever la sélection" accesskey="*" id="uns_all" class="global_button"></input>
+      <input type="submit" value="Envoyer la sélection" accesskey="-" id="send" class="global_button"></input>
+    </div>
+      <table class="table"><tbody>
+        <div class="grid1">
+          <tr>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="L50" id="L50" class="line_button"></input></td><td class="grid2"></td>
+            <td class="grid2"><input type="button" value="L40" id="L40" class="line_button"></input></td>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="L30" id="L30" class="line_button"></input></td>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="L20" id="L20" class="line_button"></input></td>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="L10" id="L10" class="line_button"></input></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"></td><td class="grid2"></td><td class="grid2"></td>
+            <td class="grid2"></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S51" id="S51" class="s_button"><input type="hidden" id="sil51" name="sil51" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S41" id="S41" class="s_button"><input type="hidden" id="sil41" name="sil41" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S31" id="S31" class="s_button"><input type="hidden" id="sil31" name="sil31" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S21" id="S21" class="s_button"><input type="hidden" id="sil21" name="sil21" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S11" id="S11" class="s_button"><input type="hidden" id="sil11" name="sil11" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+
+          <tr>
+            <td class="grid2"><input type="button" value="L130" id="L130" class="line_button"></input></td>
+            <td class="grid2"><input type="button" value="S144" id="S144" class="s_button"><input type="hidden" id="sil144" name="sil144" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S143" id="S143" class="s_button"><input type="hidden" id="sil143" name="sil143" value="0"></input></input></td>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S52" id="S52" class="s_button"><input type="hidden" id="sil52" name="sil52" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S42" id="S42" class="s_button"><input type="hidden" id="sil42" name="sil42" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S32" id="S32" class="s_button"><input type="hidden" id="sil32" name="sil32" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S22" id="S22" class="s_button"><input type="hidden" id="sil22" name="sil22" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S12" id="S12" class="s_button"><input type="hidden" id="sil12" name="sil12" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="S142" id="S142" class="s_button"><input type="hidden" id="sil142" name="sil142" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S141" id="S141" class="s_button"><input type="hidden" id="sil141" name="sil141" value="0"></input></input></td>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S53" id="S53" class="s_button"><input type="hidden" id="sil53" name="sil53" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S43" id="S43" class="s_button"><input type="hidden" id="sil43" name="sil43" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S33" id="S33" class="s_button"><input type="hidden" id="sil33" name="sil33" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S23" id="S23" class="s_button"><input type="hidden" id="sil23" name="sil23" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S13" id="S13" class="s_button"><input type="hidden" id="sil13" name="sil13" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="S132" id="S132" class="s_button"><input type="hidden" id="sil132" name="sil132" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S131" id="S131" class="s_button"><input type="hidden" id="sil131" name="sil131" value="0"></input></input></td>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S54" id="S54" class="s_button"><input type="hidden" id="sil54" name="sil54" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S44" id="S44" class="s_button"><input type="hidden" id="sil44" name="sil44" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S34" id="S34" class="s_button"><input type="hidden" id="sil34" name="sil34" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S24" id="S24" class="s_button"><input type="hidden" id="sil24" name="sil24" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S14" id="S14" class="s_button"><input type="hidden" id="sil14" name="sil14" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S55" id="S55" class="s_button"><input type="hidden" id="sil55" name="sil55" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S45" id="S45" class="s_button"><input type="hidden" id="sil45" name="sil45" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S35" id="S35" class="s_button"><input type="hidden" id="sil35" name="sil35" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S25" id="S25" class="s_button"><input type="hidden" id="sil25" name="sil25" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S15" id="S15" class="s_button"><input type="hidden" id="sil15" name="sil15" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="grid2"><input type="button" value="L100" id="L100" class="line_button"></input></td>
+            <td class="grid2"><input type="button" value="S114" id="S114" class="s_button"><input type="hidden" id="sil114" name="sil114" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S113" id="S113" class="s_button"><input type="hidden" id="sil113" name="sil113" value="0"></input></input></td>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S56" id="S56" class="s_button"><input type="hidden" id="sil56" name="sil56" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S46" id="S46" class="s_button"><input type="hidden" id="sil46" name="sil46" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S36" id="S36" class="s_button"><input type="hidden" id="sil36" name="sil36" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S26" id="S26" class="s_button"><input type="hidden" id="sil26" name="sil26" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S16" id="S16" class="s_button"><input type="hidden" id="sil16" name="sil16" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="S112" id="S112" class="s_button"><input type="hidden" id="sil112" name="sil112" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S111" id="S111" class="s_button"><input type="hidden" id="sil111" name="sil111" value="0"></input></input></td>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S57" id="S57" class="s_button"><input type="hidden" id="sil57" name="sil57" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S47" id="S47" class="s_button"><input type="hidden" id="sil47" name="sil47" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S37" id="S37" class="s_button"><input type="hidden" id="sil37" name="sil37" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S27" id="S27" class="s_button"><input type="hidden" id="sil27" name="sil27" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S17" id="S17" class="s_button"><input type="hidden" id="sil17" name="sil17" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td>
+            <td class="grid2"><input type="button" value="S102" id="S102" class="s_button"><input type="hidden" id="sil102" name="sil102" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S101" id="S101" class="s_button"><input type="hidden" id="sil101" name="sil101" value="0"></input></input></td>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S58" id="S58" class="s_button"><input type="hidden" id="sil58" name="sil58" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S48" id="S48" class="s_button"><input type="hidden" id="sil48" name="sil48" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S38" id="S38" class="s_button"><input type="hidden" id="sil38" name="sil38" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S28" id="S28" class="s_button"><input type="hidden" id="sil28" name="sil28" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S18" id="S18" class="s_button"><input type="hidden" id="sil18" name="sil18" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"></td><td class="grid2"></td><td class="grid2"><input type="button" value="S59" id="S59" class="s_button"><input type="hidden" id="sil59" name="sil59" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" value="S49" id="S49" class="s_button"><input type="hidden" id="sil49" name="sil49" value="0"></input></button></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S39" id="S39" class="s_button"><input type="hidden" id="sil39" name="sil39" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S29" id="S29" class="s_button"><input type="hidden" id="sil29" name="sil29" value="0"></input></input></td>
+            <td class="grid2"></td>
+            <td class="grid2"><input type="button" value="S19" id="S19" class="s_button"><input type="hidden" id="sil19" name="sil19" value="0"></input></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+            <td class="grid2"><input type="button" class="empty2"></input></td>
+          </tr>
+          <tr>
+            <td class="grid2"></td>
+          </tr>
+          <tr>
+            <td class="grid2"></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"><input type="button" value="S06" id="S06" class="s_button"><input type="hidden" id="sil06" name="sil06" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S05" id="S05" class="s_button"><input type="hidden" id="sil05" name="sil05" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S04" id="S04" class="s_button"><input type="hidden" id="sil04" name="sil04" value="0"></input></input></td>
+            <td class="grid2"><input type="button" name="L0" value="L0" id="L0" class="line_button"></input></td>
+            <td class="empty2"></td>
+          </tr>
+          <tr>
+            <td class="empty2"></td><td class="empty2"></td><td class="empty2"></td><td class="empty2"></td>
+            <td class="grid2"><input type="button" value="S03" id="S03" class="s_button"><input type="hidden" id="sil03" name="sil03" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S02" id="S02" class="s_button"><input type="hidden" id="sil02" name="sil02" value="0"></input></input></td>
+            <td class="grid2"><input type="button" value="S01" id="S01" class="s_button"><input type="hidden" id="sil01" name="sil01" value="0"></input></input></td>
+            <td class="empty2"></td>
+          </tr>
+        </div>
+      </tbody></table>
+    </form>
+  </body>
+<script type="text/javascript" src="mesures.js"></script>
+</html>

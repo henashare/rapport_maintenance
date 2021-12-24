@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset = "utf-8">
+  <title>Portail Maintenance</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="iconERQZ.png">
+  <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div class="bandeau"><h1>Portail Maintenance</h1></div>
+    <p> 
+        <form action="/portail/portail.php" id="login_form" method="post">
+            <div class="form_container">
+                <div>
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input class="input" type="text" name="username" id="username" placeholder="Nom d'utilisateur...">
+                </div>
+                <div>
+                    <label for="usr_passwd">Mot de passe :</label>
+                    <input class="input" type="password" name="usr_passwd" id="usr_passwd" placeholder="Mot de passe...">
+                </div>
+                <div id="connect_btn">
+                    <input type="submit" value="Se connecter" id="connect" class="button"></input>
+                </div>
+            </div>
+        </form>
+        <div class="logo">
+            <a href="https://www.euroquartz.be/?lang=fr" target="_blank"><img src="logo_euroquartz.png" alt="Euroquartz S.A."></a>
+        </div>
+    </p>
+  </body>
+  
+  <script type="text/javascript" src="accueil_sg.js"></script>
+  </html>
+  

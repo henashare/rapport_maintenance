@@ -1,0 +1,20 @@
+.bg{background-color:#006DA2;color:#FFFFFF;font-family:cursive;letter-spacing:0.5px;}
+.mainmenu{background-color:#006DA2;border:-5px #777b7e;border-radius:35px;color:#FFFFFF;padding:10px 10px;font-family:cursive;letter-spacing:0.5px;text-align:center;font-size:20pt;text-shadow:1px 1px 6px #505053;display:inline-block;margin:8px 4px;cursor:pointer;transition:2s;}
+.mainmenu:hover{text-shadow:4px 4px 10px #505053;background-color:#FFFFFF;padding:10px 10px;color:#006DA2;}
+.logo{text-align:left;position:absolute;top:0.5%;left:5%;}
+.split{height:85%;width:50%;position:fixed;top:15%;overflow-x:hidden;padding-top:20px;}
+#bande_horizontale{padding:25px;margin:0;border:none;width:100%;height:80px;background-color:#FFFFFF;color:#006DA2;text-align:center;}
+#retour_index{text-align:right; position: absolute; top:4%;right:3%;}
+#g_btns{text-align:center;padding-top:10px;}
+.s_button,.line_button,.global_button{color:#006DA2;font-size:11pt;font-weight:bold;cursor:pointer;}
+.s_button{border-radius:15px;height:50px;width:50px;background-color:#FFFFFF}
+.line_button{border-radius:50px;height:50px;width:50px;background-color:#c7c5c5;color:#00547e}
+.global_button{font-size:13pt;border-radius:15px;padding:2px 45px;transition:1s;}
+.global_button:hover{background-color:#006DA2;color:#FFFFFF;}
+.grid1{padding:20px;}
+.grid2{padding-bottom:10px;margin:0px;}
+.empty1{background-color:#006DA2;border:none;width:250px;}
+.empty2{background-color:#006DA2;border:none;width:30px;}
+.table{margin-left:10%;margin-right:auto;}
+.hr{width:30px;border:solid 2px white;display:inline-block;}
+.hr2{border-left:6px solid white;height:30px;position:relative;left:45%;}

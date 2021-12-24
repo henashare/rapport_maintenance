@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset = "utf-8">
+    <title>SG - Analyses</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="resultats.css">
+    <link rel="icon" type="image/png" href="iconERQZ.png">
+    <script src="jquery.min.js"></script>
+    <script src="chart.min.js"></script>
+  </head>
+  <body class="bg">
+    <div class="logo"><a href="https://www.euroquartz.be/?lang=fr" target="_blank"><img src="logo_euroquartz.png" alt="Euroquartz S.A."></a></div>
+    <h1 id="bande_horizontale">Résultats et analyses</h1>
+    <div id="retour_index"><form action="index.html"><button type="submit" accesskey="M" name="mainmenu" class="mainmenu">Menu principal</button></form></div>
+    <div class="selection">
+      <select name="ligne_silo" id="ligne_silo" class="select">
+        <option value="0">Ligne 0</option>
+        <option value="1">Ligne 1</option>
+        <option value="2">Ligne 2</option>
+        <option value="3">Ligne 3</option>
+        <option value="4">Ligne 4</option>
+        <option value="5">Ligne 5</option>
+        <option value="6">Ligne 6</option>
+        <option value="7">Ligne 7</option>
+        <option value="8">Ligne 8</option>
+        <option value="9">Ligne 9</option>
+        <option value="10">Ligne 50</option>
+      </select>
+      <select name="type_select" id="type_select" class="select">
+        <option value="11">Dernière mesure sur les silos de la ligne</option>
+        <option value="12">30 dernières mesures effectées sur la ligne</option>
+        <option value="13">Sélection selon le calendrier</option>
+      </select>
+      </div>
+      <div name="silo_table" id="silo_table" class="silo_table">
+        <?php include 'resultats.php'?>
+      </div>
+      <canvas id="graphique" class="graphique"></canvas>
+    <script src="resultats.js"></script>
+  </body>
+</html>

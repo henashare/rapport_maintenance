@@ -1,0 +1,13 @@
+html{height:100%;width:100%;}
+body{height:100%;width:100%;background-color:#006DA2;position:absolute 0px 0px 0px 0px;color:#FFFFFF;}
+h1{color:#006DA2;font-size:45pt;text-align:center;width:100%;border:0px;margin:0px;position:absolute;top:5%;}
+.logo{text-align:left;position:absolute;top:2.5%;left:5%;}
+.bandeau{border:0px;margin:0px;position:absolute 0px 0px 0px 0px;background-color:#FFFFFF;height:20%;width:100%;}
+table, th, td{border:1.5px solid white;border-collapse:collapse;font-size:13pt;}
+table{margin-top:1%;width:100%;}
+th{text-decoration:underline;padding:0.5% 0.5% 0.5% 0.5%;font-size:15pt;}
+td{padding:0.5% 0.5%;}
+#type{width:150px;}
+#date{width:120px;}
+#repeat{width:150px;}
+#name{width:150px;}

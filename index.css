@@ -1,0 +1,12 @@
+html{height:100%;width:100%;}
+body{height:100%;width:100%;background-color: #006DA2;position:absolute 0px 0px 0px 0px;}
+h1{color:#006DA2;font-size:45pt;text-align:center;width:100%;border:0px;margin:0px;position:absolute;top:5%;}
+.logo{text-align:left;position:absolute;top:2.5%;left:5%;}
+.form_container{position:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:5%;}
+.form_container>div{padding-top:40px;width:390px;height:50px;margin-left:auto;margin-right:auto;}
+.bandeau{border:0px;margin:0px;position:absolute 0px 0px 0px 0px;background-color:#FFFFFF;height:20%;}
+label{display:inline-block;width:150px;text-align:right;color:#FFFFFF;font-size:15pt;padding-right:1%;}
+.button{background-color:#e7e7e7dc;border:8px solid white;border-radius:35px;color:#006DA2;padding:10px 20px;font-family:cursive;letter-spacing:0.5px;text-align:center;font-size:15pt;text-shadow:1px 1px 6px #505053;margin:auto;cursor:pointer;transition:2s;width:180px;}
+.button:hover{font-size:16pt;text-shadow:4px 4px 10px #39393b;background-color:#FFFFFF;padding:10px 20px;color:#00476B;}
+.input{border-radius:8px; padding:8px;margin:5px;background-color:#dddddd;color:#006DA2;font-weight:bold;}
+#connect_btn{display:flex;justify-content:center;padding-top:8%;}
